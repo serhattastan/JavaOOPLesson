@@ -8,8 +8,13 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import com.cloffystudio.inheritance.AskerOrnek.Tankci;
 import com.cloffystudio.inheritance.BankExample.BankAccount;
 import com.cloffystudio.inheritance.CarExample.Car;
+import com.cloffystudio.inheritance.HayvanatBahcesi.Aslan;
+import com.cloffystudio.inheritance.HayvanatBahcesi.Hayvan;
+import com.cloffystudio.inheritance.HayvanatBahcesi.Kedi;
+import com.cloffystudio.inheritance.HayvanatBahcesi.Papagan;
 import com.cloffystudio.inheritance.PersonExample.Employee;
 import com.cloffystudio.inheritance.SchoolManagementExample.Student;
 
@@ -83,6 +88,20 @@ public class MainActivity extends AppCompatActivity {
 //
 //        // Bilgiler görüntüleniyor
 //        car.displayCarInfo();
+
+
+        //        //****************************Asker Ornek***********************//
+//
+//        Tankci tankci = new Tankci();
+//        tankci.atesEt();
+
+        Hayvan aslan = new Aslan("Aslan Leo", 12);
+        Hayvan kedi = new Kedi("Pişi", 1);
+        Papagan papagan = new Papagan("Boncuk", 3);
+
+        aslan.sesCikar();
+        kedi.sesCikar();
+        papagan.sesCikar();
 
 
     }
